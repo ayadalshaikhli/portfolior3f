@@ -376,7 +376,7 @@ function ThirdSection() {
             >
               <div>
                 <h1>
-                  Let's Build
+                  Lets Build
                   <span className=" font-extrabold">
                     the next <br /> big thing
                   </span>
@@ -385,7 +385,7 @@ function ThirdSection() {
               </div>
               <div className="mt-10">
                 <a
-                  class="contact__button--container--mobile mobile__only"
+                  className="contact__button--container--mobile mobile__only"
                   href="mailto:ayadalshaikhli@gmail.com"
                 >
                   <span>KEEP IN TOUCH</span>
@@ -394,10 +394,10 @@ function ThirdSection() {
               <div>
                 <div className="flex justify-around w-full">
                   <div className="text-2xl ">
-                    <h1>Let's be internet BFF'S</h1>
-                    <div class="social flex gap-5 pt-5">
+                    <h1>Lets be internet BFFS</h1>
+                    <div className="social flex gap-5 pt-5">
                       <a href="#contact">
-                        <i class="fab fas fa-phone-alt"></i>
+                        <i className="fab fas fa-phone-alt"></i>
                       </a>
                       <a href="https://www.instagram.com/ayadalshaikly/">
                         <FaInstagram className="fab" />
