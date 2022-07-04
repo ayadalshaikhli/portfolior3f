@@ -13,23 +13,23 @@ export default function IndexPage() {
   return (
     <>
       <Controller>
-        <Scene triggerHook="onLeave" duration="400%" pin={true}>
+        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
           <Timeline wrapper={<div id="pinContainer" />}>
             <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
               <FirstSection />
             </Tween>
-            <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+            {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
               <ThirdSection />
-            </Tween>
+            </Tween> */}
             <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
               <ForthSection />
             </Tween>
           </Timeline>
         </Scene>
-        <Scene triggerHook="onLeave" duration="400%" pin={true}>
+        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
           <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <SecoundSection />
+            <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+              <ThirdSection />
             </Tween>
           </Timeline>
         </Scene>

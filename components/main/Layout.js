@@ -28,6 +28,12 @@ export default function Layout(props) {
         position: absolute;
         text-align: center;
       }
+      .bord{
+        border: 1px solid #fff;
+      }
+      .bord-project{
+        border: 1px solid #fff;
+      }
 
 
 `}
