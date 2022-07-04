@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
@@ -7,7 +6,6 @@ import SecoundSection from "../components/sections/SecoundSection";
 import ThridSection from "../components/sections/ThridSection";
 import ForthSection from "../components/sections/ForthSection";
 import ThirdSection from "../components/sections/ThridSection";
-
 
 export default function IndexPage() {
   return (

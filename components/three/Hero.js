@@ -70,7 +70,7 @@ const Model = ({ ...props }) => {
       onUpdate: (self) => {
      
         
-        group.current.position.x = 5 * Math.PI * self.progress;
+        // group.current.position.x = 5 * Math.PI * self.progress;
         // cup.current.rotation.z = -2 * Math.PI * self.progress;
         // cup.current.position.y = -17 * self.progress;
         // cup.current.position.y = -2 * self.progress;
@@ -131,7 +131,7 @@ export default function Hero() {
           height: "100vh",
           position: "fixed",
           overflow: "hidden",
-          zIndex: 1,
+          
         }}
         id="main-canvas"
         shadows
