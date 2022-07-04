@@ -8,7 +8,8 @@ export default function Header() {
   return (
     <header style={{
       borderBottom: "1px solid white",
-    }} className="bg-black fixed w-full z-50">
+      backgroundColor: "#0E1012",
+    }} className="fixed w-full z-50">
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-1 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
           <Image

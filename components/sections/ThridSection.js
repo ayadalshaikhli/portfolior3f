@@ -8,6 +8,15 @@ import deli from "../../public/deli.png";
 import crypto from "../../public/cryptoo.png";
 import recharge from "../../public/rechargee.png";
 import teatro from "../../public/teatro.png";
+import zara from "../../public/zara.png";
+import {
+  IconName,
+  FaFacebookF,
+  FaPaperclip,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 const tl = gsap.timeline({
   defaults: { ease: "power3.out" },
 });
@@ -34,15 +43,20 @@ function ThirdSection() {
   });
   return (
     <section className=" text-center h-full w-full text-white">
-      <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+      <Tween from={{ y: "70%" }} to={{ y: "0%" }}>
         <section
           style={{
             zIndex: "2",
+            backgroundColor: "#0E1012",
           }}
-          className=" panel broder-2 border-white border-solid border-2  bg-black text-center h-full w-full text-white"
+          className=" panel broder-2    text-center h-full w-full text-white"
         >
-          Hello
-          <section className="panel text-center text-white bg-black z-10">
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Tataroski</div>
@@ -73,14 +87,19 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "90%" }} to={{ y: "5%" }}>
+      <Tween from={{ y: "75%" }} to={{ y: "5%" }}>
         <section
           style={{
             zIndex: "2",
           }}
-          className="bg-blue-500 panel"
+          className=" panel"
         >
-          <section className="panel text-center text-white bg-black z-10">
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white  z-10"
+          >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Delisioso</div>
@@ -118,7 +137,12 @@ function ThirdSection() {
           }}
           className=" panel"
         >
-          <section className="panel text-center text-white bg-black z-10">
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Crypto</div>
@@ -154,9 +178,14 @@ function ThirdSection() {
           style={{
             zIndex: "2",
           }}
-          className="bg-pink-500 panel"
+          className=" panel"
         >
-          <section className="panel text-center text-white bg-black z-10">
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>recharge</div>
@@ -192,9 +221,205 @@ function ThirdSection() {
           style={{
             zIndex: "2",
           }}
-          className="bg-black panel"
+          className=" panel"
         >
-          Ledya
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
+            <div className="text-xl flex flex-col ">
+              <div className="grid grid-cols-3 w-full border-b-2 p-2">
+                <div>ZARA</div>
+                <div> 2022 Branding, E-commerce,Development</div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "1rem",
+                      borderRadius: "100%",
+                    }}
+                    className="btn relative bg-white ml-44 text-center"
+                  >
+                    <h1 className=" absolute top-0">View Project</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  src={zara}
+                  alt={"hi"}
+                  layout="fixed"
+                  objectFit="fill"
+                  quality={100}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+      </Tween>
+      <Tween from={{ y: "95%" }} to={{ y: "25%" }}>
+        <section
+          style={{
+            zIndex: "2",
+          }}
+          className=" panel"
+        >
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
+            <div className="text-xl flex flex-col ">
+              <div className="grid grid-cols-3 w-full border-b-2 p-2">
+                <div>ZARA</div>
+                <div> 2022 Branding, E-commerce,Development</div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "1rem",
+                      borderRadius: "100%",
+                    }}
+                    className="btn relative bg-white ml-44 text-center"
+                  >
+                    <h1 className=" absolute top-0">View Project</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  src={zara}
+                  alt={"hi"}
+                  layout="fixed"
+                  objectFit="fill"
+                  quality={100}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+      </Tween>
+      <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+        <section
+          style={{
+            zIndex: "2",
+
+            backgroundColor: "#0E1012",
+          }}
+          className=" panel"
+        >
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel  pt-10  text-white border-l-2 flex  overflow-hidden z-50"
+          >
+            <div className="bord h-full w-12 absolute text-6xl z-50 px-10  flex flex-col justify-between  uppercase">
+              <div className="mt-20 -rotate-90">24</div>
+              <div className="mb-20 -rotate-90 flex gap-4">
+                <span>CONTACT</span> <span>ME</span>
+              </div>
+            </div>
+            {/* <div className="space-y-10 pl-10 grid grid-rows-2 w-full">
+              <div className="mt-10 text-left grid grid-rows-2  pl-20">
+                <div className="flex justify-around w-full">
+                  <div>
+                    <h1 className="text-3xl font-bold uppercase">E-mail </h1>
+                    <h2 className="text-xl">Ayadalshaikhli@gmail.com</h2>
+                  </div>
+                  <div>اثممخ</div>
+                </div>
+                <div className="flex justify-around w-full">
+                  <div>اثممخ</div>
+                  <div>اثممخ</div>
+                </div>
+                <div className="flex justify-around w-full">
+                  <div className="text-2xl ">
+                    <h1>Let's be internet BFF'S</h1>
+                    <div class="social flex gap-5 pt-5">
+                      <a href="#contact">
+                        <i class="fab fas fa-phone-alt"></i>
+                      </a>
+                      <a href="https://www.instagram.com/ayadalshaikly/">
+                        <FaInstagram className="fab" />
+                      </a>
+                      <a href="https://www.facebook.com/ayad.m.alshaikhli/">
+                        <FaFacebookF className="fab" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/ayad-alshaikhli-815599208/">
+                        <FaLinkedin className="fab" />
+                      </a>
+                      <a href="https://github.com/ayadalshaikhli">
+                        <FaGithub className="fab" />
+                      </a>
+                      <a href="https://drive.google.com/file/d/1LTI3g68P2fM_K-7JNnsJCgHEor_2k-gD/view?usp=sharing">
+                        <FaPaperclip className="fab" />
+                      </a>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div> */}
+
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "53%",
+                transform: "translate(-50%, -50%)",
+              }}
+              className="text-center  text-7xl"
+            >
+              <div>
+                <h1>
+                  Let's Build
+                  <span className=" font-extrabold">
+                    the next <br /> big thing
+                  </span>
+                  togather
+                </h1>
+              </div>
+              <div className="mt-10">
+                <a
+                  class="contact__button--container--mobile mobile__only"
+                  href="mailto:ayadalshaikhli@gmail.com"
+                >
+                  <span>KEEP IN TOUCH</span>
+                </a>
+              </div>
+              <div>
+                <div className="flex justify-around w-full">
+                  <div className="text-2xl ">
+                    <h1>Let's be internet BFF'S</h1>
+                    <div class="social flex gap-5 pt-5">
+                      <a href="#contact">
+                        <i class="fab fas fa-phone-alt"></i>
+                      </a>
+                      <a href="https://www.instagram.com/ayadalshaikly/">
+                        <FaInstagram className="fab" />
+                      </a>
+                      <a href="https://www.facebook.com/ayad.m.alshaikhli/">
+                        <FaFacebookF className="fab" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/ayad-alshaikhli-815599208/">
+                        <FaLinkedin className="fab" />
+                      </a>
+                      <a href="https://github.com/ayadalshaikhli">
+                        <FaGithub className="fab" />
+                      </a>
+                      <a download href="data/ayadalshaikhli.pdf">
+                        <FaPaperclip className="fab" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </Tween>
     </section>

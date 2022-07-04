@@ -11,6 +11,7 @@ export default function Layout(props) {
             margin: 0;
             overflow-x: hidden;
             width: 100%;
+            background-color: "0E1012";
           }
           section {
             height: 100vh;
@@ -37,7 +38,14 @@ export default function Layout(props) {
       </style>
       <Header />
       <Hero />
-      <main className="bg-black">{props.children}</main>
+      <main
+        style={{
+          backgroundColor: "#0E1012",
+        }}
+        className=""
+      >
+        {props.children}
+      </main>
 
       <Footer />
     </div>

@@ -34,10 +34,11 @@ function FirstSection() {
         <section
           style={{
             zIndex: "1",
+            backgroundColor: "#0E1012",
           }}
           className=" panel"
         >
-          <section className="panel bg-black text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
+          <section className="panel  text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
             <ul className=" text-4xl w-full ">
               <li className="border-b-2 flex pl-2">About</li>
               <li className="border-b-2 flex pl-2">APPROACH</li>
@@ -56,12 +57,13 @@ function FirstSection() {
         <section
           style={{
             zIndex: "1",
+            backgroundColor: "#0E1012",
           }}
           className="bg-red-500 panel"
         >
           <section
             id="about"
-            className="about panel relative bg-black text-white  flex pt-10 z-10"
+            className="about panel relative  text-white  flex pt-10 z-10"
           >
             <div style={{
               border: "1px solid #fff",
@@ -96,10 +98,11 @@ function FirstSection() {
         <section
           style={{
             zIndex: "1",
+            backgroundColor: "#0E1012",
           }}
           className="bg-red-500 panel"
         >
-         <section className="exp panel  bg-black text-white pt-10  flex overflow-hidden z-10">
+         <section className="exp panel   text-white pt-10  flex overflow-hidden z-10">
               <div style={{
               border: "1px solid #fff",
             }}

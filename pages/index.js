@@ -6,6 +6,7 @@ import SecoundSection from "../components/sections/SecoundSection";
 import ThridSection from "../components/sections/ThridSection";
 import ForthSection from "../components/sections/ForthSection";
 import ThirdSection from "../components/sections/ThridSection";
+import Hero from "../components/three/Hero";
 
 export default function IndexPage() {
   return (
@@ -24,9 +25,10 @@ export default function IndexPage() {
             </Tween>
           </Timeline>
         </Scene>
+
         <Scene triggerHook="onLeave" duration="1200%" pin={true}>
           <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
               <ThirdSection />
             </Tween>
           </Timeline>
