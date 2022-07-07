@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Livingmosaic from '../../components/sections/pages/livingmosaic'
+import Livingmosaic from '../../components/sections/goto/livingmosaic'
 
 export default function livingmosaic() {
   return (
