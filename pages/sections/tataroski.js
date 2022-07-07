@@ -1,5 +1,5 @@
 import React from 'react'
-import Tataroski from '../../components/sections/pages/tataroski'
+import Tataroski from '../../components/sections/goto/tataroski'
 
 function tataroski() {
   return (

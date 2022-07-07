@@ -37,7 +37,7 @@ export default function Layout(props) {
         `}
       </style>
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       <main
         style={{
           backgroundColor: "#0E1012",

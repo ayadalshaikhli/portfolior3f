@@ -133,7 +133,7 @@ function Livingmosaic() {
         }}
         className="parallax"
       ></div>
-      <div className="pt-10 grid  grid-cols-2  gap-y-5 gap-x-5">
+      {/* <div className="pt-10 grid  grid-cols-2  gap-y-5 gap-x-5">
         <div>
           <div
             dangerouslySetInnerHTML={{
@@ -196,7 +196,7 @@ function Livingmosaic() {
         />,
       `,
             }}
-          ></div>
+          ></div> */}
         </div>
       </div>
     </div>

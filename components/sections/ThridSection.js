@@ -9,7 +9,7 @@ import crypto from "../../public/cryptoo.png";
 import recharge from "../../public/rechargee.png";
 import teatro from "../../public/teatro.png";
 import zara from "../../public/zara.png";
-import NextLink from "next/link";
+import Link from "next/link";
 import {
   IconName,
   FaFacebookF,
@@ -70,9 +70,9 @@ function ThirdSection() {
                     }}
                     className=" btn relative bg-white ml-44  w-1 h-1  text-center"
                   >
-                    <NextLink href="/sections/livingmosaic">
-                    <h1 className=" absolute top-0 cur">View Project</h1>
-                    </NextLink>
+                    <Link href="/sections/livingmosaic">
+                    <a className=" absolute top-0 cur">View Project</a>
+                    </Link>
                   </div>
                 </div>
               </div>
