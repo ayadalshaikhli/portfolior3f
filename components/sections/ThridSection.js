@@ -9,6 +9,7 @@ import crypto from "../../public/cryptoo.png";
 import recharge from "../../public/rechargee.png";
 import teatro from "../../public/teatro.png";
 import zara from "../../public/zara.png";
+import NextLink from "next/link";
 import {
   IconName,
   FaFacebookF,
@@ -59,8 +60,8 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
-                <div>Tataroski</div>
-                <div> 2020 Branding, E-commerce,Development</div>
+                <div>Living Mosaic</div>
+                <div> 2022 Branding, Agancy ,Development</div>
                 <div>
                   <div
                     style={{
@@ -69,7 +70,9 @@ function ThirdSection() {
                     }}
                     className=" btn relative bg-white ml-44  w-1 h-1  text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <NextLink href="/sections/livingmosaic">
+                    <h1 className=" absolute top-0 cur">View Project</h1>
+                    </NextLink>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import Tataroski from '../../components/sections/pages/tataroski'
 
 function tataroski() {
   return (
-    <div><Tataroski/></div>
+    <div>tata</div>
   )
 }
 
