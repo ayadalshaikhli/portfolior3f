@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import livingmosaic from "../../../public/ayadd.jpg";
+import livingmosaicd from "../../../public/ayadd.jpg";
 
 function Livingmosaic() {
   return (
@@ -16,7 +16,7 @@ function Livingmosaic() {
           <h1 className="text-4xl font-bold pb-1 mr-20">Living Mosaic</h1>
           <div className="">
             <Image
-              src={livingmosaic}
+              src={livingmosaicd}
               width="1600"
               height="700"
               objectFit="cover"
