@@ -109,6 +109,7 @@ const Model = ({ ...props }) => {
         <Depth colorA="white" colorB="red" alpha={1} mode="overlay" near={1.5 * 0.7} far={1.5} origin={[1, -1, -1]} />
         <Fresnel mode="add" color="white" intensity={0.5} power={1.5} bias={0.05} />
       </LayerMaterial></mesh>
+      <sphereBufferGeometry attach="geometry" args={[1, 16, 16]}  />
     </group>
   )
 }
@@ -129,8 +130,9 @@ export default function Hero() {
         style={{
           width: "100vw",
           height: "100vh",
-          position: "fixed",
+          position: "relative",
           overflow: "hidden",
+          backgroundColor: "black",
           
         }}
         id="main-canvas"

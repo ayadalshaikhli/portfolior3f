@@ -37,7 +37,7 @@ export default function Layout(props) {
           }
         `}
       </style>
-      <IntroSection/>
+      {/* <IntroSection/> */}
       <Header />
       <Hero />
       <main
