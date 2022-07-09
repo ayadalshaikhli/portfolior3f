@@ -9,25 +9,25 @@ const tl = gsap.timeline({
 });
 
 function FirstSection() {
-  ScrollTrigger.create({
-    trigger: ".product-list",
-    start: "top 50%",
-    end: "bottom 0%",
+  // ScrollTrigger.create({
+  //   trigger: ".product-list",
+  //   start: "top 50%",
+  //   end: "bottom 0%",
 
-    onEnter: () => {
-      gsap.to(".body", {
-        duration: 1.0,
-        backgroundColor: "#fff",
-      });
-    },
+  //   onEnter: () => {
+  //     gsap.to(".body", {
+  //       duration: 1.0,
+  //       backgroundColor: "#fff",
+  //     });
+  //   },
 
-    onLeaveBack: () => {
-      gsap.to(".body", {
-        duration: 1.0,
-        backgroundColor: "#000",
-      });
-    },
-  });
+  //   onLeaveBack: () => {
+  //     gsap.to(".body", {
+  //       duration: 1.0,
+  //       backgroundColor: "#000",
+  //     });
+  //   },
+  // });
   return (
     <>
       <Tween from={{ x: "100%" }} to={{ x: "0%" }}>

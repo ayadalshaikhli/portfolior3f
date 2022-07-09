@@ -7,6 +7,9 @@ import ThridSection from "../components/sections/ThridSection";
 import ForthSection from "../components/sections/ForthSection";
 import ThirdSection from "../components/sections/ThridSection";
 import Hero from "../components/three/Hero";
+import Living from "../components/sections/projects/Living";
+import Tataroski from "../components/sections/projects/Tataroski";
+
 
 export default function IndexPage() {
   return (
@@ -34,6 +37,8 @@ export default function IndexPage() {
           </Timeline>
         </Scene>
       </Controller>
+     <Living/>
+     <Tataroski/>
     </>
     // <div className="flex flex-col items-center justify-center space-y-12">
     //   <Image

@@ -23,25 +23,25 @@ const tl = gsap.timeline({
 });
 
 function ThirdSection() {
-  ScrollTrigger.create({
-    trigger: ".product-list",
-    start: "top 50%",
-    end: "bottom 0%",
+  // ScrollTrigger.create({
+  //   trigger: ".product-list",
+  //   start: "top 50%",
+  //   end: "bottom 0%",
 
-    onEnter: () => {
-      gsap.to(".body", {
-        duration: 1.0,
-        backgroundColor: "#fff",
-      });
-    },
+  //   onEnter: () => {
+  //     gsap.to(".body", {
+  //       duration: 1.0,
+  //       backgroundColor: "#fff",
+  //     });
+  //   },
 
-    onLeaveBack: () => {
-      gsap.to(".body", {
-        duration: 1.0,
-        backgroundColor: "#000",
-      });
-    },
-  });
+  //   onLeaveBack: () => {
+  //     gsap.to(".body", {
+  //       duration: 1.0,
+  //       backgroundColor: "#000",
+  //     });
+  //   },
+  // });
   return (
     <section className=" text-center h-full w-full text-white">
       <Tween from={{ y: "70%" }} to={{ y: "0%" }}>
@@ -70,9 +70,19 @@ function ThirdSection() {
                     }}
                     className=" btn relative bg-white ml-44  w-1 h-1  text-center"
                   >
-                    <Link href="/sections/livingmosaic">
-                    <a className=" absolute top-0 cur">View Project</a>
-                    </Link>
+                    <a
+                      onClick={() => {
+                        document
+                          .getElementById("living")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                      }}
+                      className=" absolute top-0 cur"
+                    >
+                      View Project
+                    </a>
                   </div>
                 </div>
               </div>
@@ -90,6 +100,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
+
       <Tween from={{ y: "75%" }} to={{ y: "5%" }}>
         <section
           style={{
@@ -115,7 +126,19 @@ function ThirdSection() {
                     }}
                     className=" btn relative bg-white ml-44    text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("tataroski")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+                      }}
+                      className=" absolute top-0"
+                    >
+                      View Project
+                    </h1>
                   </div>
                 </div>
               </div>
