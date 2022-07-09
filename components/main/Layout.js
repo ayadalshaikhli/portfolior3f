@@ -1,6 +1,7 @@
 import Footer from "./footer";
 import Header from "./header";
 import Hero from "../three/Hero";
+import IntroSection from "../sections/IntroSection";
 
 export default function Layout(props) {
   return (
@@ -36,8 +37,9 @@ export default function Layout(props) {
           }
         `}
       </style>
+      <IntroSection/>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <main
         style={{
           backgroundColor: "#0E1012",

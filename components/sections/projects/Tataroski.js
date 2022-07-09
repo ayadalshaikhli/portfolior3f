@@ -27,7 +27,7 @@ function Tataroski() {
       </div>
       <div className="flex flex-col items-center justify-center ">
         <div className="text-center">
-          <h1 className="text-4xl font-bold pb-1 mr-20">Living Mosaic</h1>
+          <h1 className="text-4xl font-bold pb-1 mr-20">Tataroski</h1>
           <div className="">
             <div
               dangerouslySetInnerHTML={{

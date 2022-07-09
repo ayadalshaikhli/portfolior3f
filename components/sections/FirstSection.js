@@ -49,6 +49,7 @@ function FirstSection() {
             </ul>
             <span className="uppercase flex text-9xl items-end justify-center">
               Summary
+             
             </span>
           </section>
         </section>
@@ -84,6 +85,7 @@ function FirstSection() {
                   have also worked as a video and photo editor using Adobe
                   PhotoShop and Adobe Premiere. I am also passionate about
                   building animated websites using three.js blender webgl.
+                 
                 </div>
               
                 <div className="image">
@@ -241,7 +243,7 @@ function FirstSection() {
             </section>
         </section>
       </Tween>
-      
+  
     </>
   );
 }

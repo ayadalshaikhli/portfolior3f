@@ -7,6 +7,7 @@ import tataroski from "../../public/tataroski.JPG";
 import deli from "../../public/deli.png";
 import crypto from "../../public/cryptoo.png";
 import recharge from "../../public/rechargee.png";
+import livingmosaic from "../../public/livingmosaic.JPG";
 import teatro from "../../public/teatro.png";
 import zara from "../../public/zara.png";
 import Link from "next/link";
@@ -75,8 +76,20 @@ function ThirdSection() {
                         document
                           .getElementById("living")
                           .classList.toggle("hidden");
+
+                        document.getElementById("zara").classList.add("hidden");
                         document
                           .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("deli").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
                           .classList.add("hidden");
                       }}
                       className=" absolute top-0 cur"
@@ -88,7 +101,7 @@ function ThirdSection() {
               </div>
               <div className="">
                 <Image
-                  src={tataroski}
+                  src={livingmosaic}
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"
@@ -116,7 +129,7 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
-                <div>Delisioso</div>
+                <div>Tataroski</div>
                 <div> 2021 E-commerce, Branding, Development, Design</div>
                 <div>
                   <div
@@ -132,8 +145,21 @@ function ThirdSection() {
                           .getElementById("tataroski")
                           .classList.toggle("hidden");
                         document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                        document
                           .getElementById("living")
                           .classList.add("hidden");
+
+                        document.getElementById("zara").classList.add("hidden");
+
+                        document.getElementById("deli").classList.add("hidden");
                       }}
                       className=" absolute top-0"
                     >
@@ -144,7 +170,7 @@ function ThirdSection() {
               </div>
               <div className="">
                 <Image
-                  src={deli}
+                  src={tataroski}
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"
@@ -171,8 +197,8 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
-                <div>Crypto</div>
-                <div> 2022 E-commerce,Development</div>
+                <div>Delicioso</div>
+                <div> 2021 E-commerce,Development</div>
                 <div>
                   <div
                     style={{
@@ -181,13 +207,38 @@ function ThirdSection() {
                     }}
                     className=" btn relative bg-white ml-44  text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("deli")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("zara").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                      }}
+                      className=" absolute top-0"
+                    >
+                      View Project
+                    </h1>
                   </div>
                 </div>
               </div>
               <div className="">
                 <Image
-                  src={crypto}
+                  src={deli}
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"
@@ -214,7 +265,7 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
-                <div>recharge</div>
+                <div>Recharge</div>
                 <div> 2020 Branding, E-commerce,Development</div>
                 <div>
                   <div
@@ -224,7 +275,30 @@ function ThirdSection() {
                     }}
                     className="btn relative bg-white ml-44 text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("recharge")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("zara").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                        document.getElementById("deli").classList.add("hidden");
+                      }}
+                      className=" absolute top-0"
+                    >
+                      View Project
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -300,7 +374,7 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
-                <div>ZARA</div>
+                <div>Teatro</div>
                 <div> 2022 Branding, E-commerce,Development</div>
                 <div>
                   <div
@@ -310,13 +384,36 @@ function ThirdSection() {
                     }}
                     className="btn relative bg-white ml-44 text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("teatro")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("deli").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document.getElementById("zara").classList.add("hidden");
+                      }}
+                      className=" absolute top-0"
+                    >
+                      View Project
+                    </h1>
                   </div>
                 </div>
               </div>
               <div className="">
                 <Image
-                  src={zara}
+                  src={teatro}
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"

@@ -9,6 +9,12 @@ import ThirdSection from "../components/sections/ThridSection";
 import Hero from "../components/three/Hero";
 import Living from "../components/sections/projects/Living";
 import Tataroski from "../components/sections/projects/Tataroski";
+import Recharge from "../components/sections/projects/Recharge";
+import Delicioso from "../components/sections/projects/Delicioso";
+import Zara from "../components/sections/projects/Zara";
+import Crypto from "../components/sections/projects/Crypto";
+import Teatro from "../components/sections/projects/Teatro";
+
 
 
 export default function IndexPage() {
@@ -37,8 +43,14 @@ export default function IndexPage() {
           </Timeline>
         </Scene>
       </Controller>
+     
      <Living/>
      <Tataroski/>
+     <Delicioso/>
+     <Recharge/>
+     <Zara/>
+     <Crypto/>
+     <Teatro/>
     </>
     // <div className="flex flex-col items-center justify-center space-y-12">
     //   <Image
