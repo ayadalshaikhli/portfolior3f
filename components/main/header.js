@@ -13,7 +13,7 @@ export default function Header() {
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-1 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
           <Image
-            src="/tailwind-logo.svg"
+            src="/favicon.ico"
             width={40}
             height={40}
             priority

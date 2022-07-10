@@ -44,7 +44,7 @@ export default function Layout(props) {
     
       <main
         style={{
-          backgroundColor: "#0E1012",
+        
         }}
         className=""
       >

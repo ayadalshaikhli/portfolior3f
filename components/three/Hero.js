@@ -299,7 +299,7 @@ export default function Hero() {
           height: "100vh",
           position: "fixed",
           overflow: "hidden",
-        
+          zIndex: 0,
           background: "#0E1012"
           
          
