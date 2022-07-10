@@ -28,7 +28,9 @@ function Noodle() {
   const [speed] = useState(() => 0.1 + Math.random() / 10)
   const position = useMemo(() => {
     const z = Math.random() * -30
-    const bounds = viewport.getCurrentViewport(camera, [0, 0, z])
+    const y = Math.random() * -30
+    const x = Math.random() * -30
+    const bounds = viewport.getCurrentViewport(camera, [x, y, z])
     return [THREE.MathUtils.randFloatSpread(bounds.width), THREE.MathUtils.randFloatSpread(bounds.height * 0.75), z]
   }, [viewport])
   return (
@@ -39,7 +41,7 @@ function Noodle() {
 }
 
 export default function Noodles() {
-  return Array.from({ length: 25 }, (_, i) => <Noodle key={i} />)
+  return Array.from({ length: 55 }, (_, i) => <Noodle key={i} />)
 }
 
 useGLTF.preload('/worm-transformed.glb')

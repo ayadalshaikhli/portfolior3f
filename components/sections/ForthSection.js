@@ -14,7 +14,7 @@ function ForthSection() {
         style={{
           zIndex: "1",
         }}
-        className="bg-yellow-500 panel text-white"
+        className="bg-black panel text-white"
       >
         Manal
       </section>
