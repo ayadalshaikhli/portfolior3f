@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useState, useEffect, useCallback } from "react";
+import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useControls } from 'leva'
 import {
@@ -26,6 +26,7 @@ import { a } from '@react-spring/three'
 import { Physics, usePlane, useSphere } from "@react-three/cannon";
 import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing";
 import { LayerMaterial, Depth, Noise,  Fresnel } from "lamina";
+import Noodles from "./Noodles";
 
 const Lights = () => {
   return (
@@ -178,11 +179,7 @@ const AnimatedMaterial = a(MeshDistortMaterial)
   const [mode, setMode] = useState(false)
   const [down, setDown] = useState(false)
   const [hovered, setHovered] = useState(false)
-  const [active, setActive] = useState(null);
 
-  const scrollToSection = useCallback((pinContainer) => {
-    setActive(pinContainer);
-  }, [setActive]);
   // Change cursor on hovered state
   useEffect(() => {
     document.body.style.cursor = hovered
@@ -213,7 +210,7 @@ const AnimatedMaterial = a(MeshDistortMaterial)
     {
       wobble: down ? 1.2 : hovered ? 1.05 : 1,
       coat: mode && !hovered ? 0.04 : 1,
-      ambient: mode && !hovered ? 2.5 : 0.5,
+      ambient: mode && !hovered ? 1.5 : 0.5,
       env: mode && !hovered ? 0.4 : 1,
       color: hovered ? '#E8B059' : mode ? '#202020' : 'white',
       config: (n) => n === 'wobble' && hovered && { mass: 2, tension: 1000, friction: 10 }
@@ -239,12 +236,11 @@ const AnimatedMaterial = a(MeshDistortMaterial)
             // Toggle mode between dark and bright
             setMode(!mode)
             setBg({ background: !mode ? '#202020' : '#f0f0f0', fill: !mode ? '#f0f0f0' : '#202020' })
-            setActive(scrollToSection)
           }}>
           <sphereBufferGeometry args={[1, 64, 64]} />
           <AnimatedMaterial color={color} envMapIntensity={env} clearcoat={coat} clearcoatRoughness={0} metalness={0.1} />
         </a.mesh>
-        <Environment preset="warehouse" />
+        <Environment preset="night" />
         <ContactShadows
           rotation={[Math.PI / 2, 0, 0]}
           position={[0, -1.6, 0]}
@@ -259,11 +255,41 @@ const AnimatedMaterial = a(MeshDistortMaterial)
   )
 }
 
+function Bg() {
+  return (
+    <mesh scale={100}>
+      <boxGeometry args={[1, 1, 1]} />
+      <LayerMaterial side={THREE.BackSide}>
+        <Depth colorB="red" colorA="skyblue" alpha={1} mode="normal" near={130} far={200} origin={[100, 100, -100]} />
+        <Noise mapping="local" type="white" scale={1000} colorA="white" colorB="black" mode="subtract" alpha={0.2} />
+      </LayerMaterial>
+    </mesh>
+  )
+}
 
+function Rig({ v = new THREE.Vector3() }) {
+  return useFrame((state) => {
+    state.camera.position.lerp(v.set(state.mouse.x / 2, state.mouse.y / 2, 10), 0.05)
+  })
+}
 
-
+function Caption({ children }) {
+  const { width } = useThree((state) => state.viewport)
+  return (
+    <Text
+      position={[0, 0, -5]}
+      lineHeight={0.8}
+      font="/Ki-Medium.ttf"
+      fontSize={width / 8}
+      material-toneMapped={false}
+      anchorX="center"
+      anchorY="middle">
+      {children}
+    </Text>
+  )
+}
 export default function Hero() {
-  const [{ background, fill }, set] = useSpring({ background: '#f0f0f0', fill: '#202020' }, [])
+    const [{ background, fill }, set] = useSpring({ background: '#f0f0f0', fill: '#202020' }, [])
 
   return (
     <>
@@ -271,9 +297,9 @@ export default function Hero() {
         style={{
           width: "100vw",
           height: "100vh",
-          position: "relative",
+          position: "fixed",
           overflow: "hidden",
-          zIndex: 1,
+        
           background: "#0E1012"
           
          
@@ -282,10 +308,14 @@ export default function Hero() {
         id="main-canvas"
         shadows
         gl={{ stencil: false, antialias: false }}
-        camera={{ position: [0, 0, 20], fov: 120, near: 50, far: 20 }}
+        camera={{ position: [0, 0, 10], fov: 22 }}
       >
+        
         <Lights />
-        <Scene setBg={set}/>
+        <Noodles />
+        <Caption>{`HELLO\nIM AYAD\nFULL STACK\nWEB-DEVELOPER.`}</Caption>
+        <Rig />
+        {/* <Bg /> */}
         {/* <Model/> */}
 
       </Canvas>
