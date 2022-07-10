@@ -242,6 +242,7 @@ function ThirdSection() {
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"
+                  height={649}
                   quality={100}
                   loading="lazy"
                 />
@@ -349,6 +350,7 @@ function ThirdSection() {
                 <Image
                   src={zara}
                   alt={"hi"}
+                  height={649}
                   layout="fixed"
                   objectFit="fill"
                   quality={100}
