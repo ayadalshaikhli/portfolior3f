@@ -7,6 +7,7 @@ import ThridSection from "../components/sections/ThridSection";
 import ForthSection from "../components/sections/ForthSection";
 import ThirdSection from "../components/sections/ThridSection";
 import Hero from "../components/three/Hero";
+import Wall from "../components/three/Wall";
 import Living from "../components/sections/projects/Living";
 import Tataroski from "../components/sections/projects/Tataroski";
 import Recharge from "../components/sections/projects/Recharge";
@@ -34,7 +35,7 @@ export default function IndexPage() {
             </Tween>
           </Timeline>
         </Scene>
-            <Hero/>
+         
         <Scene triggerHook="onLeave" duration="1200%" pin={true}>
           <Timeline wrapper={<div id="pinContainer" />}>
             <Tween from={{ x: "100%" }} to={{ x: "0%" }}>

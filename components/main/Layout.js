@@ -1,6 +1,7 @@
 import Footer from "./footer";
 import Header from "./header";
 import Hero from "../three/Hero";
+
 import IntroSection from "../sections/IntroSection";
 
 export default function Layout(props) {
@@ -40,6 +41,7 @@ export default function Layout(props) {
       {/* <IntroSection/> */}
       <Header />
       <Hero />
+    
       <main
         style={{
           backgroundColor: "#0E1012",
