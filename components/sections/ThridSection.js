@@ -242,7 +242,7 @@ function ThirdSection() {
                   alt={"hi"}
                   layout="fixed"
                   objectFit="fill"
-                  height={649}
+                  height={549}
                   quality={100}
                   loading="lazy"
                 />
