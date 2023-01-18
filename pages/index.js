@@ -48,7 +48,7 @@ export default function IndexPage() {
             </Timeline>
           </Scene>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Scene triggerHook="onLeave" duration="1200%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
               <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
