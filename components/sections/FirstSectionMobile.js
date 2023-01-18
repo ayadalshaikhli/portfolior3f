@@ -19,7 +19,7 @@ function FirstSectionMobile() {
           }}
           className=" panel"
         >
-          <section className="panel  text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
+          <section className="panel text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
             <ul className=" text-2xl w-full ">
               <li className="border-b-2 flex pl-2">About</li>
               <li className="border-b-2 flex pl-2">APPROACH</li>

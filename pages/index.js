@@ -26,60 +26,61 @@ export default function IndexPage() {
     <>
       <Controller >
         <div className="hidden  md:block">
-        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
-          <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <FirstSection />
-            </Tween>
-            {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+          <Scene triggerHook="onLeave" duration="1200%" pin={true}>
+            <Timeline wrapper={<div id="pinContainer" />}>
+              <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+                <FirstSection />
+              </Tween>
+              {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
               <ThirdSection />
             </Tween> */}
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <ForthSection />
-            </Tween>
-          </Timeline>
-        </Scene>
-         
-        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
-          <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <ThirdSection />
-            </Tween>
-          </Timeline>
-        </Scene>
+              <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+                <ForthSection />
+              </Tween>
+            </Timeline>
+          </Scene>
+
+          <Scene triggerHook="onLeave" duration="1200%" pin={true}>
+            <Timeline wrapper={<div id="pinContainer" />}>
+              <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+                <ThirdSection />
+              </Tween>
+            </Timeline>
+          </Scene>
         </div>
         <div className="md:hidden">
-        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
-          <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <FirstSectionMobile />
-            </Tween>
-            {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+          <Scene triggerHook="onLeave" duration="1200%" pin={true}>
+            <Timeline wrapper={<div id="pinContainer" />}>
+              <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+                <FirstSectionMobile />
+              </Tween>
+              {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
               <ThirdSection />
             </Tween> */}
-            {/* <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+              {/* <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
               <ForthSectionMobile />
             </Tween> */}
-          </Timeline>
-        </Scene>
-         
-        <Scene triggerHook="onLeave" duration="1200%" pin={true}>
-          <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-              <ThirdSectionMobile />
-            </Tween>
-          </Timeline>
-        </Scene>
+              <Timeline wrapper={<div id="pinContainer" />}>
+                <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+                  <ThirdSectionMobile />
+                </Tween>
+              </Timeline>
+            </Timeline>
+          </Scene>
+
+          {/* <Scene triggerHook="onLeave" duration="1200%" pin={true}>
+          
+        </Scene> */}
         </div>
       </Controller>
-     
-     <Living/>
-     <Tataroski/>
-     <Delicioso/>
-     <Recharge/>
-     <Zara/>
-     <Crypto/>
-     <Teatro/>
+
+      <Living />
+      <Tataroski />
+      <Delicioso />
+      <Recharge />
+      <Zara />
+      <Crypto />
+      <Teatro />
     </>
     // <div className="flex flex-col items-center justify-center space-y-12">
     //   <Image
