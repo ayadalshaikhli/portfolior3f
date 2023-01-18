@@ -37,7 +37,7 @@ function Tataroski() {
           muted
           autoplay
           playsinline
-          src="/tataroski.mp4"
+          src="https://ayadalshaikhli.github.io/videos/tataroski.mp4"
           
         />,
       `,

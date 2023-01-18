@@ -54,7 +54,7 @@ function Teatro() {
           muted
           autoplay
           playsinline
-          src="/Teatro.mp4"
+          src="https://ayadalshaikhli.github.io/videos/Teatro.mp4"
           
         />,
       `,

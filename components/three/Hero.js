@@ -25,14 +25,14 @@ import { useSpring } from '@react-spring/core'
 import { a } from '@react-spring/three'
 import { Physics, usePlane, useSphere } from "@react-three/cannon";
 import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing";
-import { LayerMaterial, Depth, Noise,  Fresnel } from "lamina";
+import { LayerMaterial, Depth, Noise, Fresnel } from "lamina";
 import Noodles from "./Noodles";
 
 const Lights = () => {
   return (
     <>
-     
-      <directionalLight position={[-10, -10, -5]} intensity={0.5}  />
+
+      <directionalLight position={[-10, -10, -5]} intensity={0.5} />
       <directionalLight
         castShadow
         intensity={0.1}
@@ -43,7 +43,7 @@ const Lights = () => {
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
         color={[7, 3.45, .1]}
-       
+
       />
       <spotLight
         color={[7, 3.45, .2]}
@@ -79,15 +79,15 @@ const Model = ({ ...props }) => {
   const sidewall3 = useRef()
   const sidewall4 = useRef()
   // const ref = useRef()
-  
-  const { nodes, materials,animations  } = useGLTF('/wall.glb')
-  
-console.log(animations);
+
+  const { nodes, materials, animations } = useGLTF('/wall.glb')
+
+  console.log(animations);
   // const boxOne = useRef();
   // const boxTwo = useRef();
   // const boxThree = useRef();
   // const texture = useTexture('/rainbow.png')
-  
+
   // const { gradient } = useControls({ gradient: { value: 0.7, min: 0, max: 1 } })
   // useFrame((state) => (boxOne.current.rotation.y = Math.sin(state.clock.getElapsedTime() / 2) * Math.PI,
   // boxTwo.current.rotation.y = Math.sin(state.clock.getElapsedTime() / 4) * Math.PI)
@@ -101,12 +101,12 @@ console.log(animations);
   //     start: "top top",
   //     end: "bottom bottom",
   //     onUpdate: (self) => {
-     
-        
+
+
   //       group.current.position.z = -5 * Math.PI * self.progress;
   //       cam.current.position.z = -90 * Math.PI * self.progress;
   //       // frontwall.current.position.y = 55  * self.progress;
-        
+
   //       // sidewall1.current.scale.x = 0 * self.progress;
   //       // cup.current.rotation.z = -2 * Math.PI * self.progress;
   //       // cup.current.position.y = -17 * self.progress;
@@ -116,42 +116,42 @@ console.log(animations);
   // }, [])
 
   // useFrame(() => {
-    
+
   //   boxOne.current.rotation.y += 0.03;
   //   boxTwo.current.rotation.y += 0.05;
   //   boxThree.current.rotation.y += 0.02;
   // });
   return (
-    <>  
-    <group ref={group} {...props} dispose={null}>
-      <group name="Scene">
-        <group name="Plane002" position={[0, 0.69, -13.01]} rotation={[0, -Math.PI / 2, 0]}>
-          <mesh name="Plane003_1" geometry={nodes.Plane003_1.geometry} material={materials.WALL} />
-          <mesh name="Plane003_2" geometry={nodes.Plane003_2.geometry} material={materials.FLOOR} />
+    <>
+      <group ref={group} {...props} dispose={null}>
+        <group name="Scene">
+          <group name="Plane002" position={[0, 0.69, -13.01]} rotation={[0, -Math.PI / 2, 0]}>
+            <mesh name="Plane003_1" geometry={nodes.Plane003_1.geometry} material={materials.WALL} />
+            <mesh name="Plane003_2" geometry={nodes.Plane003_2.geometry} material={materials.FLOOR} />
+          </group>
+          <mesh name="Plane" geometry={nodes.Plane.geometry} material={materials.FLOOR} />
+          <mesh name="Plane003" geometry={nodes.Plane003.geometry} material={materials.WATER} position={[0, 0.01, 0]} >
+
+          </mesh>
+          <mesh ref={sidewall1} name="Cube003" geometry={nodes.Cube003.geometry} material={materials.WALL} position={[0, 0, -7.83]} scale={0.69} >
+
+          </mesh>
+          <mesh name="Cube004" geometry={nodes.Cube004.geometry} material={materials.WALL} position={[-7.62, 0, -13.11]} scale={0.69} />
+          <mesh name="Cube006" geometry={nodes.Cube006.geometry} material={materials.WALL} position={[0, 0.59, -6.35]} scale={0.69} />
+          <mesh name="Cube" geometry={nodes.Cube.geometry} material={materials.WALL} position={[-26.14, 1.29, -11.58]} />
+          <mesh name="Cube009" geometry={nodes.Cube009.geometry} material={materials.WALL} position={[0, 0, -43.55]} />
+          <mesh name="Cube011" geometry={nodes.Cube011.geometry} material={materials.WALL} position={[0, 6.23, 7.73]} scale={0.69} />
+          <mesh ref={frontwall} name="Cube001" geometry={nodes.Cube001.geometry} material={materials.WALL} position={[0, 8.2, -36.38]} />
         </group>
-        <mesh name="Plane" geometry={nodes.Plane.geometry} material={materials.FLOOR} />
-        <mesh   name="Plane003" geometry={nodes.Plane003.geometry} material={materials.WATER} position={[0, 0.01, 0]} >
-      
-        </mesh>
-        <mesh ref={sidewall1} name="Cube003" geometry={nodes.Cube003.geometry} material={materials.WALL} position={[0, 0, -7.83]} scale={0.69} >
-        
-        </mesh>
-        <mesh name="Cube004" geometry={nodes.Cube004.geometry} material={materials.WALL} position={[-7.62, 0, -13.11]} scale={0.69} />
-        <mesh    name="Cube006" geometry={nodes.Cube006.geometry} material={materials.WALL} position={[0, 0.59, -6.35]} scale={0.69} />
-        <mesh  name="Cube" geometry={nodes.Cube.geometry} material={materials.WALL} position={[-26.14, 1.29, -11.58]} />
-        <mesh name="Cube009" geometry={nodes.Cube009.geometry} material={materials.WALL} position={[0, 0, -43.55]} />
-        <mesh name="Cube011" geometry={nodes.Cube011.geometry} material={materials.WALL} position={[0, 6.23, 7.73]} scale={0.69} />
-        <mesh ref={frontwall} name="Cube001" geometry={nodes.Cube001.geometry} material={materials.WALL} position={[0, 8.2, -36.38]} />
       </group>
-    </group>
-    <group
-    ref={cam}
-    name="Camera"
-    position={[0, -3, -3]}
-    rotation={[0, 0, 0]}
-  >
-    <PerspectiveCamera makeDefault fov={25} position={[0, 4, 30]}>
-      {/* <directionalLight
+      <group
+        ref={cam}
+        name="Camera"
+        position={[0, -3, -3]}
+        rotation={[0, 0, 0]}
+      >
+        <PerspectiveCamera makeDefault fov={25} position={[0, 4, 30]}>
+          {/* <directionalLight
         position={[300, 130, 15]}
         shadow-camera-right={8}
         shadow-camera-top={8}
@@ -163,8 +163,8 @@ console.log(animations);
         shadow-bias={-0.0001}
        
       /> */}
-    </PerspectiveCamera>
-  </group>
+        </PerspectiveCamera>
+      </group>
     </>
   )
 }
@@ -173,7 +173,7 @@ useGLTF.preload('/cube.glb')
 
 
 const AnimatedMaterial = a(MeshDistortMaterial)
- function Scene({ setBg }) {
+function Scene({ setBg }) {
   const sphere = useRef()
   const light = useRef()
   const [mode, setMode] = useState(false)
@@ -185,8 +185,8 @@ const AnimatedMaterial = a(MeshDistortMaterial)
     document.body.style.cursor = hovered
       ? 'none'
       : `url('data:image/svg+xml;base64,${btoa(
-          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#E8B059"/></svg>'
-        )}'), auto`
+        '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#E8B059"/></svg>'
+      )}'), auto`
   }, [hovered])
 
   // Make the bubble float and follow the mouse
@@ -289,7 +289,7 @@ function Caption({ children }) {
   )
 }
 export default function Hero() {
-    const [{ background, fill }, set] = useSpring({ background: '#f0f0f0', fill: '#202020' }, [])
+  const [{ background, fill }, set] = useSpring({ background: '#f0f0f0', fill: '#202020' }, [])
 
   return (
     <>
@@ -301,16 +301,14 @@ export default function Hero() {
           overflow: "hidden",
           zIndex: 0,
           background: "#0E1012"
-          
-         
-          
+
         }}
         id="main-canvas"
         shadows
         gl={{ stencil: false, antialias: false }}
         camera={{ position: [0, 0, 10], fov: 22 }}
       >
-        
+
         <Lights />
         <Noodles />
         <Caption>{`HELLO\nIM AYAD\nFULL STACK\nWEB-DEVELOPER.`}</Caption>

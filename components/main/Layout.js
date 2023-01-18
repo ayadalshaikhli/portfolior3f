@@ -41,13 +41,7 @@ export default function Layout(props) {
       {/* <IntroSection/> */}
       <Header />
       <Hero />
-    
-      <main
-        style={{
-        
-        }}
-        className=""
-      >
+      <main>
         {props.children}
       </main>
 

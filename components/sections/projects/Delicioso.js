@@ -56,7 +56,7 @@ function Delicioso() {
           muted
           autoplay
           playsinline
-          src="/Deli.mp4"
+          src="https://ayadalshaikhli.github.io/videos/Deli.mp4"
           
         />,
       `,

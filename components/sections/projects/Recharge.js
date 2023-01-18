@@ -55,7 +55,7 @@ function Recharge() {
           muted
           autoplay
           playsinline
-          src="/recharge.mp4"
+          src="https://ayadalshaikhli.github.io/videos/recharge.mp4"
           
         />,
       `,

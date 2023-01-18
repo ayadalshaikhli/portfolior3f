@@ -37,7 +37,7 @@ function Zara() {
         muted
         autoplay
         playsinline
-        src="/tataroski.mp4"
+        src="https://ayadalshaikhli.github.io/videos/zara.mp4"
         
       />,
     `,

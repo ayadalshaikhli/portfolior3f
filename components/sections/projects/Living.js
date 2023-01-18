@@ -38,7 +38,7 @@ function Living() {
           muted
           autoplay
           playsinline
-          src="/living.mp4"
+          src="https://ayadalshaikhli.github.io/videos/living.mp4"
           
         />,
       `,
