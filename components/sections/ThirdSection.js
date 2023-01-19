@@ -85,10 +85,9 @@ function ThirdSection() {
                 <Image
                   src="https://ayadalshaikhli.github.io/videos/livingmosaic.JPG"
                   alt={"hi"}
-                  className=""
+                  objectFit="cover"
+                  height={880}
                   width={1920}
-                  height={1080}
-
                   quality={100}
                   loading="lazy"
                 />
@@ -156,8 +155,9 @@ function ThirdSection() {
                 <Image
                     src="https://ayadalshaikhli.github.io/videos/tataroski.JPG"
                     alt={"hi"}
+                    objectFit="cover"
+                    height={880}
                     width={1920}
-                  height={1080}
                     quality={100}
                     loading="lazy"
                 />
@@ -224,8 +224,9 @@ function ThirdSection() {
                 <Image
                   src="https://ayadalshaikhli.github.io/videos/deli.png"
                   alt={"hi"}
+                  objectFit="cover"
+                  height={880}
                   width={1920}
-                  height={1080}
                   quality={100}
                   loading="lazy"
                 />
@@ -290,8 +291,9 @@ function ThirdSection() {
                 <Image
                   src="https://ayadalshaikhli.github.io/videos/rechargee.png"
                   alt={"hi"}
+                  objectFit="cover"
+                  height={880}
                   width={1920}
-                  height={1080}
                   quality={100}
                   loading="lazy"
                 />
@@ -333,8 +335,9 @@ function ThirdSection() {
                 <Image
                    src="https://ayadalshaikhli.github.io/videos/zara.png"
                    alt={"hi"}
+                   objectFit="cover"
+                   height={880}
                    width={1920}
-                  height={1080}
                    quality={100}
                    loading="lazy"
                 />
@@ -399,8 +402,9 @@ function ThirdSection() {
                 <Image
                   src="https://ayadalshaikhli.github.io/videos/teatro.png"
                   alt={"hi"}
+                  objectFit="cover"
+                  height={620}
                   width={1920}
-                  height={1080}
                   quality={100}
                   loading="lazy"
                 />
