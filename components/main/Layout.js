@@ -40,8 +40,9 @@ export default function Layout(props) {
       </style>
       {/* <IntroSection/> */}
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       <main>
+     
         {props.children}
       </main>
 

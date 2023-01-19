@@ -26,8 +26,10 @@ export default function IndexPage() {
     <>
       <Controller >
         <div className="hidden  md:block">
+         
           <Scene triggerHook="onLeave" duration="1200%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
+            <Hero/>
               <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
                 <FirstSection />
               </Tween>
@@ -49,8 +51,9 @@ export default function IndexPage() {
           </Scene>
         </div>
         <div className="xl:hidden">
-          <Scene triggerHook="onLeave" duration="1200%" pin={true}>
+          <Scene triggerHook="onLeave" duration="1300%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
+            <Hero/>
               <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
                 <FirstSectionMobile />
               </Tween>
