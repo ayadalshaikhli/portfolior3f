@@ -10,22 +10,25 @@ const tl = gsap.timeline({
 
 function FirstSection() {
   // ScrollTrigger.create({
-  //   trigger: ".product-list",
-  //   start: "top 50%",
-  //   end: "bottom 0%",
-
+  //   once: true,
+  //   trigger: ".exp",
+  //   start: "top top",
+  //   end: "bottom bottom",
+  //   runBackwards: false,
+    
   //   onEnter: () => {
-  //     gsap.to(".body", {
-  //       duration: 1.0,
-  //       backgroundColor: "#fff",
+  //     gsap.from(".image", {  
+       
+  //       x: "50px",
+        
+  //     });
+  //     gsap.to(".image", {
+  //       scale: 1,
+  //       x: "0",
   //     });
   //   },
-
   //   onLeaveBack: () => {
-  //     gsap.to(".body", {
-  //       duration: 1.0,
-  //       backgroundColor: "#000",
-  //     });
+     
   //   },
   // });
   return (
@@ -36,16 +39,16 @@ function FirstSection() {
             zIndex: "1",
             backgroundColor: "#0E1012",
           }}
-          className=" panel"
+          className=" panel "
         >
-          <section className="panel  text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
+          <section className="panel gsap-first-animation  text-white border-l-2 border-white flex flex-col justify-between pt-11  uppercase z-10">
             <ul className=" text-4xl w-full ">
-              <li className="border-b-2 flex pl-2">About</li>
-              <li className="border-b-2 flex pl-2">APPROACH</li>
-              <li className="border-b-2 flex pl-2">SELECTED PROJECTS</li>
-              <li className="border-b-2 flex pl-2">AWARDS & RECOGNITIONS</li>
-              <li className="border-b-2 flex pl-2">CONTACT US</li>
-              <li className="border-b-2 flex pl-2">COLOPHON</li>
+              <li className="border-b-2 flex pl-2 navigationn gsap-first-animation">About</li>
+              <li className="border-b-2 flex pl-2 navigationn">APPROACH</li>
+              <li className="border-b-2 flex pl-2 navigationn">SELECTED PROJECTS</li>
+              <li className="border-b-2 flex pl-2 navigationn">AWARDS & RECOGNITIONS</li>
+              <li className="border-b-2 flex pl-2 navigationn">CONTACT US</li>
+              <li className="border-b-2 flex pl-2 navigationn">COLOPHON</li>
             </ul>
             <span className="uppercase flex text-9xl items-end justify-center">
               Summary

@@ -27,7 +27,7 @@ function ThirdSection() {
 
   return (
     <section className=" text-center h-full w-full text-white">
-      <Tween from={{ y: "70%" }} to={{ y: "0%" }}>
+      <Tween from={{ y: "120%" }} to={{ y: "0%" }}>
         <section
           style={{
             zIndex: "2",
@@ -97,7 +97,7 @@ function ThirdSection() {
         </section>
       </Tween>
 
-      <Tween from={{ y: "75%" }} to={{ y: "5%" }}>
+      <Tween from={{ y: "125%" }} to={{ y: "5%" }}>
         <section
           style={{
             zIndex: "2",
@@ -166,7 +166,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "80%" }} to={{ y: "10%" }}>
+      <Tween from={{ y: "130%" }} to={{ y: "10%" }}>
         <section
           style={{
             zIndex: "2",
@@ -235,7 +235,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "85%" }} to={{ y: "15%" }}>
+      <Tween from={{ y: "135%" }} to={{ y: "15%" }}>
         <section
           style={{
             zIndex: "2",
@@ -302,7 +302,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "90%" }} to={{ y: "20%" }}>
+      <Tween from={{ y: "140%" }} to={{ y: "20%" }}>
         <section
           style={{
             zIndex: "2",
@@ -346,7 +346,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "95%" }} to={{ y: "25%" }}>
+      <Tween from={{ y: "145%" }} to={{ y: "25%" }}>
         <section
           style={{
             zIndex: "2",
@@ -413,7 +413,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+      <Tween from={{ x: "150%" }} to={{ x: "0%" }}>
         <section
           style={{
             zIndex: "2",

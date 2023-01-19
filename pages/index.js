@@ -26,31 +26,33 @@ export default function IndexPage() {
     <>
       <Controller >
         <div className="hidden  md:block">
-         
           <Scene triggerHook="onLeave" duration="1200%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
             <Hero/>
               <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
                 <FirstSection />
+                <ForthSection />
+                <ThirdSection />
+
               </Tween>
               {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
               <ThirdSection />
             </Tween> */}
-              <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
-                <ForthSection />
-              </Tween>
+              {/* <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
+               
+              </Tween> */}
             </Timeline>
           </Scene>
-
+{/* 
           <Scene triggerHook="onLeave" duration="1200%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
               <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
                 <ThirdSection />
               </Tween>
             </Timeline>
-          </Scene>
+          </Scene> */}
         </div>
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <Scene triggerHook="onLeave" duration="1300%" pin={true}>
             <Timeline wrapper={<div id="pinContainer" />}>
             <Hero/>
