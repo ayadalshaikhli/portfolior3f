@@ -43,6 +43,144 @@ function ThirdSection() {
           >
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
+                <div>Uber-Eat</div>
+                <div> 2023  App Development</div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "1rem",
+                      borderRadius: "100%",
+                    }}
+                    className="btn relative "
+                  >
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("uber")
+                          .classList.toggle("hidden");
+                        document.getElementById("living").classList.add("hidden");
+                        document.getElementById("zara").classList.add("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("deli").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                      }}
+                      className="absolute top-0 "
+                    >
+                      In Development
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  src="https://ayadalshaikhli.github.io/videos/uber-eat.png"
+                  alt={"hi"}
+                  objectFit="cover"
+                  height={1080}
+                  width={1920}
+                  quality={100}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+      </Tween>
+      <Tween from={{ y: "125%" }} to={{ y: "5%" }}>
+        <section
+          style={{
+            zIndex: "2",
+            backgroundColor: "#0E1012",
+          }}
+          className="panel broder-2 text-center h-full w-full text-white"
+        >
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
+            <div className="text-xl flex flex-col ">
+              <div className="grid grid-cols-3 w-full border-b-2 p-2">
+                <div>Uber-Eat</div>
+                <div> 2023  App Development</div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "1rem",
+                      borderRadius: "100%",
+                    }}
+                    className="btn relative "
+                  >
+                    <h1
+                      onClick={() => {
+                        document
+                          .getElementById("uber")
+                          .classList.toggle("hidden");
+                        document.getElementById("living").classList.add("hidden");
+                        document.getElementById("zara").classList.add("hidden");
+                        document
+                          .getElementById("tataroski")
+                          .classList.add("hidden");
+                        document.getElementById("deli").classList.add("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                      }}
+                      className="absolute top-0 "
+                    >
+                      In Development
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  src="https://ayadalshaikhli.github.io/videos/uber-eat.png"
+                  alt={"hi"}
+                  objectFit="cover"
+                  height={1080}
+                  width={1920}
+                  quality={100}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+      </Tween>
+      <Tween from={{ y: "130%" }} to={{ y: "5%" }}>
+        <section
+          style={{
+            zIndex: "2",
+            backgroundColor: "#0E1012",
+          }}
+          className="panel broder-2 text-center h-full w-full text-white"
+        >
+          <section
+            style={{
+              backgroundColor: "#0E1012",
+            }}
+            className="panel text-center text-white bg-black z-10"
+          >
+            <div className="text-xl flex flex-col ">
+              <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Living Mosaic</div>
                 <div> 2022 Branding, Agancy ,Development</div>
                 <div>
@@ -51,7 +189,7 @@ function ThirdSection() {
                       fontSize: "1rem",
                       borderRadius: "100%",
                     }}
-                    className="btn relative bg-white ml-44 w-1 h-1 text-center"
+                    className="btn relative bg-white ml-44 text-center"
                   >
                     <a
                       onClick={() => {
@@ -97,7 +235,7 @@ function ThirdSection() {
         </section>
       </Tween>
 
-      <Tween from={{ y: "125%" }} to={{ y: "9.7%" }}>
+      <Tween from={{ y: "135%" }} to={{ y: "9.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -120,7 +258,7 @@ function ThirdSection() {
                       fontSize: "1rem",
                       borderRadius: "100%",
                     }}
-                    className=" btn relative bg-white ml-44    text-center"
+                    className=" btn relative bg-white ml-44  text-center"
                   >
                     <h1
                       onClick={() => {
@@ -166,7 +304,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "130%" }} to={{ y: "14.7%" }}>
+      <Tween from={{ y: "140%" }} to={{ y: "14.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -235,7 +373,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "135%" }} to={{ y: "19.7%" }}>
+      <Tween from={{ y: "145%" }} to={{ y: "19.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -302,7 +440,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "140%" }} to={{ y: "24.3%" }}>
+      <Tween from={{ y: "150%" }} to={{ y: "24.3%" }}>
         <section
           style={{
             zIndex: "2",
@@ -368,7 +506,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "145%" }} to={{ y: "29%" }}>
+      <Tween from={{ y: "155%" }} to={{ y: "29%" }}>
         <section
           style={{
             zIndex: "2",
