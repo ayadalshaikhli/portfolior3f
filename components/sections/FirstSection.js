@@ -134,7 +134,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="JavaScript"
-                      src={"/java.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/java.png"}
                       width={150}
                       height={150}
                     />
@@ -143,7 +143,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="react"
-                      src={"/react.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/react.png"}
                       width={150}
                       height={150}
                     />
@@ -152,7 +152,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="nextjs"
-                      src={"/nextjs.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/nextjs.png"}
                       width={150}
                       height={150}
                     />
@@ -161,7 +161,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="jquery"
-                      src={"/jquery.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/jquery.png"}
                       width={150}
                       height={150}
                     />
@@ -170,7 +170,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="Gsap"
-                      src={"/Gsap.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/Gsap.png"}
                       width={150}
                       height={150}
                     />
@@ -179,7 +179,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="three"
-                      src={"/three.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/three.png"}
                       width={150}
                       height={150}
                     />
@@ -188,7 +188,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="html"
-                      src={"/html.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/html.png"}
                       width={150}
                       height={150}
                     />
@@ -197,7 +197,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="css"
-                      src={"/css.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/css.png"}
                       width={150}
                       height={150}
                     />
@@ -206,7 +206,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="blender"
-                      src={"/blender.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/blender.png"}
                       width={150}
                       height={150}
                     />
@@ -216,7 +216,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="mongodb"
-                      src={"/mongodb.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/mongodb.png"}
                       width={150}
                       height={150}
                     />
@@ -226,7 +226,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="nodejs"
-                      src={"/nodejs.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/nodejs.png"}
                       width={150}
                       height={150}
                     />
@@ -235,7 +235,7 @@ function FirstSection() {
                   <div className="helo">
                     <Image
                       alt="expressjs"
-                      src={"/expressjs.png"}
+                      src={"https://ayadalshaikhli.github.io/videos/expressjs.png"}
                       width={150}
                       height={150}
                     />

@@ -4,7 +4,7 @@ import { Tween } from "react-gsap";
 import Image from "next/image";
 
 import {
-  
+
   FaFacebookF,
   FaPaperclip,
   FaGithub,
@@ -18,9 +18,9 @@ const tl = gsap.timeline({
 function ThirdSectionMobile() {
 
   return (
- <>
+    <>
       <Tween from={{ y: "120%" }} to={{ y: "0%" }}>
-      <section
+        <section
           style={{
             zIndex: "2",
             backgroundColor: "#0E1012",
@@ -89,7 +89,7 @@ function ThirdSectionMobile() {
           </section>
         </section>
       </Tween>
-      
+
       <Tween from={{ y: "125%" }} to={{ y: "5%" }}>
         <section
           style={{
@@ -327,8 +327,32 @@ function ThirdSectionMobile() {
                       borderRadius: "100%",
                     }}
                     className="btn relative bg-white  text-center"
+                    
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1 className=" absolute top-0"
+                     onClick={() => {
+                      document
+                          .getElementById("zara")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+
+                        document.getElementById("tataroski").classList.add("hidden");
+
+                        document.getElementById("deli").classList.add("hidden");
+                    }}
+                   
+                    >View Project</h1>
                   </div>
                 </div>
               </div>
@@ -499,7 +523,7 @@ function ThirdSectionMobile() {
           </section>
         </section>
       </Tween>
-      </>
+    </>
   );
 }
 

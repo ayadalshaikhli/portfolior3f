@@ -32,8 +32,8 @@ function ForthSection() {
                   Results-driven full stack web developer with (X) years of experience building elegant, user-friendly applications from end-to-end. Proficient in JavaScript, React, Node.js, HTML/CSS and relational databases. Collaborative team player with a passion for clean code, optimization, and learning new technologies.
                 </p>
               </div>
-              <div className="flex mt-32 flex-row ">
-                <div className="flex flex-col space-y-3 text-xl ml-[40rem] mt-10">
+              <div className="flex mt-32 flex-row ml-[40rem] ">
+                <div className="flex flex-col space-y-2 text-xl ">
                   <div>Tech2u</div>
                   <div>Full-Stack Web Developer</div>
                   <div className="text-sm w-1/2 ">Created React Native apps integrating Stripe APIs and Firebase.
@@ -43,18 +43,16 @@ function ForthSection() {
                     Optimized websites for performance.</div>
                   <div className="font-extrabold">1</div>
                 </div>
-                <div className="flex flex-col space-y-3 text-xl mt-10">
+                <div className="flex flex-col space-y-2 text-xl ">
                   <div>UpWork</div>
                   <div>Full-Stack Web Developer</div>
                   <div className="text-sm w-1/2 ">Developed a Zara website mockup with 99% performance and 100% SEO using Next.js and Shopify.
                     Created Halloween and phone recharge websites with Javascript, Shopify, NextJS, Three.js, Tailwind, Photoshop, GSAP, and Blender.
                     Helped launch multiple Shopify stores with custom themes.
-                    
-                    
                   </div>
                   <div className="font-extrabold">2</div>
                 </div>
-                <div className="flex flex-col space-y-3 text-xl mt-10">
+                <div className="flex flex-col space-y-2 text-xl ">
                   <div>Facebook</div>
                   <div>Content Creator</div>
                   <div className="text-sm w-1/2 ">Produced tech tutorials and gaming live streams.
@@ -65,6 +63,7 @@ function ForthSection() {
                   <div className="font-extrabold">3</div>
                 </div>
               </div>
+
             </div>
           </section>
         </section>
@@ -98,7 +97,7 @@ function ForthSection() {
                 "
               />
             </div>
-           
+
           </section>
         </section>
       </Tween>

@@ -11,7 +11,7 @@ function Tataroski() {
         position: "fixed",
         top: "0",
         left: "0",
-        width: "60vw",
+        width: "50vw",
         height: "100%",
       }}
       id="tataroski"
@@ -54,9 +54,9 @@ function Tataroski() {
         className="pt-10 grid  grid-cols-2  gap-x-5"
       >
         <div>
-          <h1>Client : Studio Mærtens</h1>
-          <h1>Project : Studio Mærtens E-commerce</h1>
-          <h1>Year : 2020</h1>
+          <h1>Client : Tataroski</h1>
+          <h1>Project : Tataroski E-commerce</h1>
+          <h1>Year : 2021</h1>
         </div>
         <div>
           <h1>Disciplines</h1>

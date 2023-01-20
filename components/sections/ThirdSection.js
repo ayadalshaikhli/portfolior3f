@@ -33,7 +33,7 @@ function ThirdSection() {
             zIndex: "2",
             backgroundColor: "#0E1012",
           }}
-          className=" panel broder-2    text-center h-full w-full text-white"
+          className="panel broder-2 text-center h-full w-full text-white"
         >
           <section
             style={{
@@ -51,7 +51,7 @@ function ThirdSection() {
                       fontSize: "1rem",
                       borderRadius: "100%",
                     }}
-                    className=" btn relative bg-white ml-44  w-1 h-1  text-center"
+                    className="btn relative bg-white ml-44 w-1 h-1 text-center"
                   >
                     <a
                       onClick={() => {
@@ -74,7 +74,7 @@ function ThirdSection() {
                           .getElementById("teatro")
                           .classList.add("hidden");
                       }}
-                      className=" absolute top-0 cur"
+                      className="absolute top-0 "
                     >
                       View Project
                     </a>
@@ -182,7 +182,7 @@ function ThirdSection() {
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Delicioso</div>
-                <div> 2021 E-commerce,Development</div>
+                <div> 2021 Recipe ,Development</div>
                 <div>
                   <div
                     style={{
@@ -251,7 +251,7 @@ function ThirdSection() {
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Recharge</div>
-                <div> 2020 Branding, E-commerce,Development</div>
+                <div> 2021  E-commerce, Development</div>
                 <div>
                   <div
                     style={{
@@ -318,7 +318,7 @@ function ThirdSection() {
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>ZARA</div>
-                <div> 2022 Branding, E-commerce,Development</div>
+                <div> 2021 E-commerce,Development</div>
                 <div>
                   <div
                     style={{
@@ -327,7 +327,29 @@ function ThirdSection() {
                     }}
                     className="btn relative bg-white ml-44 text-center"
                   >
-                    <h1 className=" absolute top-0">View Project</h1>
+                    <h1 className=" absolute top-0"
+                    onClick={() => {
+                      document
+                          .getElementById("zara")
+                          .classList.toggle("hidden");
+                        document
+                          .getElementById("crypto")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("recharge")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("teatro")
+                          .classList.add("hidden");
+                        document
+                          .getElementById("living")
+                          .classList.add("hidden");
+
+                        document.getElementById("tataroski").classList.add("hidden");
+
+                        document.getElementById("deli").classList.add("hidden");
+                    }}
+                    >View Project</h1>
                   </div>
                 </div>
               </div>
@@ -362,7 +384,7 @@ function ThirdSection() {
             <div className="text-xl flex flex-col ">
               <div className="grid grid-cols-3 w-full border-b-2 p-2">
                 <div>Teatro</div>
-                <div> 2022 Branding, E-commerce,Development</div>
+                <div> 2021 Development</div>
                 <div>
                   <div
                     style={{
