@@ -3,13 +3,7 @@ import { gsap, Expo } from "gsap/dist/gsap";
 import { Tween, Timeline } from "react-gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import tataroski from "../../public/tataroski.JPG";
-import deli from "../../public/deli.png";
-import crypto from "../../public/cryptoo.png";
-import recharge from "../../public/rechargee.png";
-import livingmosaic from "../../public/livingmosaic.JPG";
-import teatro from "../../public/teatro.png";
-import zara from "../../public/zara.png";
+
 import Link from "next/link";
 import {
   IconName,

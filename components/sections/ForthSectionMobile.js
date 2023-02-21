@@ -29,7 +29,7 @@ function ForthSectionMobile() {
             <div className=" pl-10 grid grid-rows-4 text-left mt-5 ml-5">
               <div className="grid grid-rows-2 ">
                 <p className="w-[75%] text-sm text-justify ">
-                  Results-driven full stack web developer with (X) years of experience building elegant, user-friendly applications from end-to-end. Proficient in JavaScript, React, Node.js, HTML/CSS and relational databases. Collaborative team player with a passion for clean code, optimization, and learning new technologies.
+                  Results-driven full stack web developer with 3 years of experience building elegant, user-friendly applications from end-to-end. Proficient in JavaScript, React, Node.js, HTML/CSS and relational databases. Collaborative team player with a passion for clean code, optimization, and learning new technologies.
                 </p>
               </div>
               <div className="grid grid-cols-1">

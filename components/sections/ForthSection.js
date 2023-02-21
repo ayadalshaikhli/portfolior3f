@@ -29,7 +29,7 @@ function ForthSection() {
             <div className=" pl-10 grid grid-rows-3 text-left mt-20">
               <div className="grid grid-rows-2 ml-[900px]">
                 <p className="w-1/2 text-2xl text-justify">
-                  Results-driven full stack web developer with (X) years of experience building elegant, user-friendly applications from end-to-end. Proficient in JavaScript, React, Node.js, HTML/CSS and relational databases. Collaborative team player with a passion for clean code, optimization, and learning new technologies.
+                  Results-driven full stack web developer with 3 years of experience building elegant, user-friendly applications from end-to-end. Proficient in JavaScript, React, Node.js, HTML/CSS and relational databases. Collaborative team player with a passion for clean code, optimization, and learning new technologies.
                 </p>
               </div>
               <div className="flex mt-32 flex-row ml-[40rem] ">
