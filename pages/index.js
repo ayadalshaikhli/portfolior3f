@@ -62,6 +62,7 @@ export default function IndexPage() {
               </Tween>
               {/* <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
               <ThirdSection />
+              ccc
             </Tween> */}
               {/* <Tween from={{ x: "100%" }} to={{ x: "0%" }}>
               <ForthSectionMobile />
