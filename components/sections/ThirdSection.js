@@ -21,7 +21,7 @@ function ThirdSection() {
 
   return (
     <section className=" text-center h-full w-full text-white">
-      <Tween from={{ y: "120%" }} to={{ y: "5%" }}>
+      <Tween from={{ x: "120%" }} to={{ x: "5%" }}>
         <section
           style={{
             zIndex: "2",
@@ -90,7 +90,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "125%" }} to={{ y: "5%" }}>
+      <Tween from={{ x: "125%" }} to={{ x:"5%" }}>
         <section
           style={{
             zIndex: "2",
@@ -159,7 +159,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "130%" }} to={{ y: "5%" }}>
+      <Tween from={{ x: "130%" }} to={{ x:"5%" }}>
         <section
           style={{
             zIndex: "2",
@@ -229,7 +229,7 @@ function ThirdSection() {
         </section>
       </Tween>
 
-      <Tween from={{ y: "135%" }} to={{ y: "9.7%" }}>
+      <Tween from={{ x: "135%" }} to={{ x:"9.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -298,7 +298,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "140%" }} to={{ y: "14.7%" }}>
+      <Tween from={{ x: "140%" }} to={{ x:"14.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -367,7 +367,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "145%" }} to={{ y: "19.7%" }}>
+      <Tween from={{ x: "145%" }} to={{ x:"19.7%" }}>
         <section
           style={{
             zIndex: "2",
@@ -434,7 +434,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "150%" }} to={{ y: "24.3%" }}>
+      <Tween from={{ x: "150%" }} to={{ x:"24.3%" }}>
         <section
           style={{
             zIndex: "2",
@@ -500,7 +500,7 @@ function ThirdSection() {
           </section>
         </section>
       </Tween>
-      <Tween from={{ y: "155%" }} to={{ y: "29%" }}>
+      <Tween from={{ x: "155%" }} to={{ x:"29%" }}>
         <section
           style={{
             zIndex: "2",
