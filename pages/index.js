@@ -8,13 +8,13 @@ import ForthSection from "../components/sections/ForthSection";
 import ThirdSection from "../components/sections/ThirdSection";
 import Hero from "../components/three/Hero";
 import Wall from "../components/three/Wall";
-import Living from "../components/sections/projects/Living";
-import Tataroski from "../components/sections/projects/Tataroski";
-import Recharge from "../components/sections/projects/Recharge";
-import Delicioso from "../components/sections/projects/Delicioso";
-import Zara from "../components/sections/projects/Zara";
-import Crypto from "../components/sections/projects/Crypto";
-import Teatro from "../components/sections/projects/Teatro";
+// import Living from "../components/sections/projects/Living";
+// import Tataroski from "../components/sections/projects/Tataroski";
+// import Recharge from "../components/sections/projects/Recharge";
+// import Delicioso from "../components/sections/projects/Delicioso";
+// import Zara from "../components/sections/projects/Zara";
+// import Crypto from "../components/sections/projects/Crypto";
+// import Teatro from "../components/sections/projects/Teatro";
 import FirstSectionMobile from "../components/sections/FirstSectionMobile";
 import ForthSectionMobile from "../components/sections/ForthSectionMobile";
 import ThirdSectionMobile from "../components/sections/ThirdSectionMobile";
@@ -94,13 +94,13 @@ export default function IndexPage() {
         </div>
       </Controller>
 
-      <Living />
-      <Tataroski />
+      {/* <Living /> */}
+      {/* <Tataroski />
       <Delicioso />
       <Recharge />
       <Zara />
       <Crypto />
-      <Teatro />
+      <Teatro /> */}
     </>
     // <div className="flex flex-col items-center justify-center space-y-12">
     //   <Image

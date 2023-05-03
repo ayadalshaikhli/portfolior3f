@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import livingmosaicd from "../../../public/ayadd.jpg";
-import { gsap, Expo } from "gsap/dist/gsap";
-import { Tween, Timeline } from "react-gsap";
+
 
 function Crypto() {
   return (
@@ -99,6 +98,7 @@ function Crypto() {
             width="1600"
             height="700"
             objectFit="cover"
+            alt='ayad'
           />
         </div>
       </div>
@@ -111,6 +111,8 @@ function Crypto() {
           width="1200"
           height="1200"
           objectFit="cover"
+                      alt='ayad'
+
         />
       </div>
       <div>
@@ -120,6 +122,8 @@ function Crypto() {
           width="1200"
           height="1200"
           objectFit="cover"
+                      alt='ayad'
+
         />
       </div>
       <div></div>
@@ -129,6 +133,8 @@ function Crypto() {
           width="1200"
           height="1200"
           objectFit="cover"
+                      alt='ayad'
+
         />
       </div>
       <div>
@@ -137,6 +143,8 @@ function Crypto() {
           width="1200"
           height="1200"
           objectFit="cover"
+                      alt='ayad'
+
         />
       </div>
       <div>
@@ -145,6 +153,8 @@ function Crypto() {
           width="1200"
           height="1200"
           objectFit="cover"
+          alt='ayad'
+
         />
       </div>
     </div>

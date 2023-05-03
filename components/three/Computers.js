@@ -40,6 +40,7 @@ export function Instances({ children, ...props }) {
   return (
     <Merged castShadow receiveShadow meshes={instances} {...props}>
       {(instances) => <context.Provider value={instances} 
+        // eslint-disable-next-line react/no-children-prop
         children={children}
       />}
     </Merged>

@@ -26,7 +26,7 @@ import { a } from '@react-spring/three'
 import { Physics, usePlane, useSphere } from "@react-three/cannon";
 import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import { LayerMaterial, Depth, Noise, Fresnel } from "lamina";
-import Noodles from "./Noodles";
+// import Noodles from "./Noodles";
 import { Instances, Computers } from './Computers'
 import { easing } from 'maath'
 
